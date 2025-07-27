@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="header.css">
+    <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+</head>
+<body>
+    
+<!--Header-->
+    <header class="header">
+
+        <div class="header-items-container">
+
+<!--Left Side Header-->
+         <a class="header-left-box" href="PFS.html">
+            <div class="logo-mask"><img src="ImagesFolder/Logo.png" alt="Logo-Khalid" class="header-logo" loading="lazy"></div>
+            <div class="name-mask"><div class="name english" >Khalid</div></div>
+         </a>     
+
+<!--Right Side Header-->
+         <div class="header-right-box">
+
+            <button class="language language-animation" onclick="
+                
+                switchLanguage();
+                ">ع</button>
+
+
+    </header>
+
+    <section class="service-thumbnail-holder">
+        <div class="service-thumbnail">
+            <div class="service-icon-and-name">
+                <div class="service-icon"></div>
+                Wedding Coverage
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="service-label">
+        <div class="package-name-and-countdown">
+
+            <div class="package-name-and-icon">
+                <img src="ImagesFolder/Flash-icon.png" class="package-icon">
+                Flash Package
+            </div>
+
+            <p class="countdown countdown-en">03 : 22 : 18 : 43</p>
+        </div>
+        <div class="package-price">
+                    <p class="currency" >&#65020;</p>
+                    <div class="package-price-numbers">
+                        <div class="crossed-price">12,000 </div>
+                        <div class="current-price">9,500 </div>
+                    </div>
+        </div>
+    </div>
+
+    <div class="test-div"></div>
+
+    <div class="package-features">
+        <div class="package-feature1 package-feature">
+            <div class="bulletpoint bulletpoint-en"></div>
+            Full Day Coverage Up to 10 hours.
+        </div>
+        <div class="package-feature2 package-feature">
+            <div class="bulletpoint bulletpoint-en"></div>
+            Pre-Wedding Consultation.
+        </div>
+        <div class="package-feature3 package-feature">
+            <div class="bulletpoint bulletpoint-en"></div>
+            Professional Photography:
+
+        </div>
+            <ul class="sub-feature sub-feature1">
+                <li>-Experienced Photographer.</li>
+                <li>-Candid and traditional shots.</li>
+                <li>-Pre-Wedding Portrait Session.</li>
+            </ul>
+        <div class="package-feature4 package-feature">
+            <div class="bulletpoint bulletpoint-en"></div>
+            Cinematic Videography:
+        </div>
+            <ul class="sub-feature sub-feature2">
+                <li>-Highlight film (3-5 minutes).</li>
+                <li>-Full Event Coverage with drone footage (where permitted).</li>
+                <li>-Raw footage on a custom USB drive.</li>
+            </ul>
+        <div class="package-feature5 package-feature">
+            <div class="bulletpoint bulletpoint-en"></div>
+            Photo & video editing:
+        </div>
+            <ul class="sub-feature sub-feature3">
+                <li>-Professional editing of all selected images.</li>
+                <li>-Color correction and sound editing for videos.</li>
+            </ul>
+        <div class="package-feature6 package-feature">
+            <div class="bulletpoint bulletpoint-en"></div>
+            Online Gallery & Prints.
+        </div>
+                <div class="package-feature7 package-feature">
+            <div class="bulletpoint bulletpoint-en"></div>
+            Bonus:
+        </div>
+            <ul class="sub-feature sub-feature4">
+                <li>-Complimentary bridal portrait session.</li>
+            </ul>
+    </div>
+
+    <div class="review-footer">
+        <div class="review-footer-container">
+            <strong class = 'payment-confirmation-note'>*Payment & Confirmation after our call.</strong>
+            <button class="review-cta" onclick="window.location.href='index.html';">Continue To Booking</button>
+        </div>
+
+    </div>
+    
+    <div class="review-footer-padding">
+
+        </div>
+
+    </div>
+    <div class="service-icon-test"></div>
+    
+</body>
+</html>
+<style>
+
+
+*{
+    flex-shrink: 0;
+}
+
+.header-right-box{
+    width: fit-content;
+}
+
+.service-icon-arabic{
+    width: clamp(0px, 4.259vw, 21.56px);
+    background-image: url(ImagesFolder/wedding-coverage-icon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: clamp(0px, 4.259vw, 21.56px);
+    border-radius: 50%;
+    margin-left: clamp(0px, 2vw, 10.14px);
+}
+
+.name{
+    margin-left:  clamp(0px, 1.86vw, 11.736px);
+    margin-right:  clamp(0px, 1.86vw, 11.736px);
+;
+}
+
+.review-footer-padding{
+    height: clamp(0px , 41.09vw , 208.04px);
+    width: 100vw;
+}
+
+.payment-confirmation-note{
+    font-size: clamp(0px , 2.7918vw , 14.16px);
+    margin-bottom: clamp(0px , 6.52vw , 33.03px);
+    align-self: start;
+}
+
+.review-cta{
+    width: clamp(0px , 86.5116279vw , 439.01px);
+    height: clamp(0px , 17.44365vw , 88.32px);
+    border-radius: clamp(0px , 2.324vw , 11.77px);
+    background-color: #DBA622;
+    color: white;
+    font-weight: bold;
+    flex-shrink: 0 ;
+    margin-bottom: clamp(0px , 1.52vw , 7.70px);
+    font-size: clamp(0px ,3.55vw , 18px);
+    border: none;
+    cursor: pointer;
+}
+
+.review-footer-container{
+    width: clamp(0px , 86.5116279vw , 439.01px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review-footer{
+    width:  100vw ;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #070707;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(0px , 5.58vw , 28.28px);
+    box-sizing: border-box;
+    height: clamp(0px , 40.09vw , 203.04px);
+    z-index: 10;
+    flex: 1;
+}
+
+.sub-feature{
+    margin: 0px;
+}
+
+.sub-feature li{
+    list-style-type: none;
+    font-weight: 100;
+    font-size: clamp(0px , 2.79vw , 14.14px);
+    line-height: 2;
+}
+
+.bulletpoint-en{
+    width: clamp(0px , 1vw , 5.07px);
+    height: clamp(0px , 1vw , 5.07px);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-color: white;
+    margin-right: clamp(0px , 2vw , 10.14px);
+}
+
+.bulletpoint-ar{
+    width: clamp(0px , 1vw , 5.07px);
+    height: clamp(0px , 1vw , 5.07px);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-color: white;
+    margin-left: clamp(0px , 2vw , 10.14px);
+}
+
+.package-feature1{
+    margin: 0px;
+}
+
+.package-feature{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: clamp(0px , 3.26vw , 16.52px);
+    line-height: 1.3;
+    margin-top: 3vw;
+}
+
+.package-features{
+    margin-top: clamp(0px , 12.625vw , 64.01px);    
+    width: clamp(0px , 86.5116279vw , 439.01px);
+    line-height: 3;
+}
+
+.package-value{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.package-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: clamp(0px, 1.86vw, 9.42px);
+    font-weight: bold;
+}
+
+.currency{
+    width: clamp(0px, 3.25vw, 16.48px);
+    font-size: clamp(0px, 3.6vw, 18.23px); 
+    font-weight: bold;
+}
+
+.current-price{
+    font-size: clamp(0px, 2.32vw, 11.76px);
+}
+
+.crossed-price{
+    text-decoration: line-through solid white clamp(0px, 0.4vw, 2.03px);
+    font-size: clamp(0px, 2.32vw, 11.76px);
+}
+
+.package-price-numbers{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    padding-left: clamp(0px , 3vw , 15.21px);
+}
+
+    .countdown-en{
+        width: clamp(0px , 14.25vw , 72.18px);
+        height: fit-content;
+        margin: 0px;
+        font-weight: 100;
+        white-space: nowrap;
+        font-size: clamp(0px , 2vw , 10.14px)
+    }
+
+    .countdown-ar{
+        width: clamp(0px , 14.25vw , 72.18px);
+        height: fit-content;
+        margin: 0px;
+        font-weight: 100;
+        white-space: nowrap;
+        font-size: clamp(0px , 2vw , 10.14px);
+    }
+
+    .package-description{
+        font-size: clamp(0px , 2vw , 10.14px)
+    }
+
+    .package-name-and-icon{
+        display: flex;
+        align-items: center;
+        font-size: clamp(0px , 2.32vw , 11.76px);
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .package-name-and-countdown{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        line-height: 1;
+        height: 100%;
+    }
+
+    .package-icon{
+        width: clamp(0px, 2.3255814vw, 11.78px);
+        filter: drop-shadow(0px 0px 1.3vw #DBA622);
+        margin-right: clamp(0px , 1.39534884vw , 7.07px);
+    }
+
+
+    .service-label{
+        margin-top: clamp(0px , 8.36vw , 42.39px);
+        width: clamp(0px , 86.5116279vw , 439.01px);
+        height: clamp(0px , 7.29vw , 36.927px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-family: Inter;
+    }
+
+
+    .service-thumbnail-holder{
+        width: clamp(0px , 86.5116279vw , 439.01px);
+        height: clamp(0px , 59.19vw , 300.39px);
+        background-color: #161616;
+        border-radius: clamp(0px , 2.325vw , 11.78px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .service-thumbnail{
+        width: clamp(0px , 84.4116279vw , 427.39px);
+        height: clamp(0px , 57.19vw , 289.86px);
+        background-color: #161616;
+        border-radius: clamp(0px , 2.025vw , 10.26px);
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+        background-image: url(ImagesFolder/wedding-coverage-review-thumbnail.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-clip: padding-box;
+    }
+
+    .service-icon-and-name{
+        height: clamp(0px , 6.978vw , 35.3785px);
+        border-radius: 0px clamp(0px ,0.4772727vw , 2.41977px) 0px 0px ;
+        background-color: #161616;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: clamp(0px , 3.56vw , 18.03px);
+        padding-right: 5%;
+    }
+    
+
+    .service-icon{
+        width: clamp(0px , 4.259vw , 21.56px);
+        background-image: url(ImagesFolder/wedding-coverage-icon.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: clamp(0px , 4.259vw , 21.56px);
+        border-radius: 50%;
+        margin-right: clamp(0px , 2vw , 10.14px);
+    }
+
+    .service-icon-test{
+        width: clamp(0px , 4.259vw , 21.56px);
+        background-image: url(ImagesFolder/wedding-coverage-icon.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: clamp(0px , 4.259vw , 21.56px);
+        border-radius: 50%;
+        margin-right: clamp(0px , 2vw , 10.14px);
+    }
+
+    
+    .header {
+        width: clamp(0px , 100vw ,507px);
+        height: clamp(0px ,22.5vw 114.075px) !important;
+        left: 0px;
+        right: 0px;
+        background-color: #0D0D0D;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        top: 0px;
+    }
+</style>
+
+<script>
+
+const header = document.querySelector('.header');
+
+
+
+
+
+
+
+
+function startCountdownArabic() {
+  const countdownElement = document.querySelector('.countdown');
+  if (!countdownElement) return;
+
+  // Replace class if needed
+  const targetDate = new Date('2025-07-31T23:59:59');
+  let timerId;
+
+  function toArabicNumerals(num) {
+    const arabicDigits = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
+    return String(num).split('').map(d => arabicDigits[Number(d)]).join('');
+  }
+
+  function updateCountdown() {
+    const now = new Date();
+    const diff = targetDate - now;
+
+    if (diff <= 0) {
+      countdownElement.innerText = '۰۰ : ۰۰ : ۰۰ : ۰۰';
+      clearInterval(timerId);
+      return;
+    }
+
+    const totalSeconds = Math.floor(diff / 1000);
+    const days = Math.floor(totalSeconds / (3600 * 24));
+    const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    const dd = toArabicNumerals(String(days).padStart(2, '0'));
+    const hh = toArabicNumerals(String(hours).padStart(2, '0'));
+    const mm = toArabicNumerals(String(minutes).padStart(2, '0'));
+    const ss = toArabicNumerals(String(seconds).padStart(2, '0'));
+    const langButton = document.querySelector('.language');
+
+    if (langButton.innerText == 'EN'){
+    countdownElement.innerText = `${ss} : ${mm} : ${hh} : ${dd}`;}else {
+        return
+    }
+  };
+
+  // Initialize countdown
+  updateCountdown();
+  clearInterval(timerId);
+  timerId = setInterval(updateCountdown, 1000);
+};
+
+function startCountdownEnglish() {
+  const countdownElement = document.querySelector('.countdown');
+
+  const targetDate = new Date('2025-07-31T23:59:59');
+  let timerId;
+
+  function updateCountdown() {
+    const now = new Date();
+    const diff = targetDate - now;
+
+    if (diff <= 0) {
+      countdownElement.innerText = '00 : 00 : 00 : 00';
+      clearInterval(timerId);
+      return;
+    }
+
+    const totalSeconds = Math.floor(diff / 1000);
+    const days = Math.floor(totalSeconds / (3600 * 24));
+    const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    const dd = String(days).padStart(2, '0');
+    const hh = String(hours).padStart(2, '0');
+    const mm = String(minutes).padStart(2, '0');
+    const ss = String(seconds).padStart(2, '0');
+    const langButton = document.querySelector('.language');
+    if (langButton.innerText == 'ع'){
+    countdownElement.innerText = `${dd} : ${hh} : ${mm} : ${ss}`;}else {
+        return
+    }
+};
+
+  // Initialize countdown
+  updateCountdown();
+  clearInterval(timerId);
+  timerId = setInterval(updateCountdown, 1000);
+};
+startCountdownEnglish();
+
+
+
+
+        const serviceNO = localStorage.getItem('serviceNo');
+        console.log(serviceNO);
+
+        const serviceElements = {
+            ST : document.querySelector('.service-thumbnail'),
+            SINA : document.querySelector('.service-icon-and-name'),
+            SI : document.querySelector('.service-icon'),
+            PNI : document.querySelector('.package-name-and-icon'),
+            CrossedPrice : document.querySelector('.crossed-price'),
+            CurrentPrice : document.querySelector('.current-price'),
+            PF1 : document.querySelector('.package-feature1'),
+            PF2 : document.querySelector('.package-feature2'),
+            PF3 : document.querySelector('.package-feature3'),
+            SF1 : document.querySelector('.sub-feature1'),
+            PF4 : document.querySelector('.package-feature4'),
+            SF2 : document.querySelector('.sub-feature2'),
+            PF5 : document.querySelector('.package-feature5'),
+            SF3 : document.querySelector('.sub-feature3'),
+            PF6 : document.querySelector('.package-feature6'),
+            PF7 : document.querySelector('.package-feature7'),
+            SF4 : document.querySelector('.sub-feature4'),
+            PCN : document.querySelector('.payment-confirmation-note'),
+            RCTA : document.querySelector('.review-cta'),
+            PNC : document.querySelector('.package-name-and-countdown'),
+        };
+        console.log(serviceElements.SI);
+        console.log(serviceElements.SI);
+
+        if (serviceNO == 1){
+        serviceElements.ST.style.backgroundImage = `url(ImagesFolder/wedding-coverage-review-thumbnail.png)`;
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SI.style.backgroundImage = `url(ImagesFolder/wedding-coverage-icon.png) ;`;
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon"></div> Wedding Coverage`
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> <img src="ImagesFolder/Flash-icon.png" class="package-icon" style="margin-left: 0px; margin-right: clamp(0px, 1.39535vw, 7.07px); "> Flash Package </div>`
+        serviceElements.CrossedPrice.innerText = `12,000`;
+        serviceElements.CurrentPrice.innerText =  `9,500`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Full Day Coverage Up to 10 hours.`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div> Pre-Wedding Consultation.`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Professional Photography:`
+        
+        serviceElements.SF1.innerHTML = ` <li>-Experienced Photographer.</li> <li>-Candid and traditional shots.</li><li>-Pre-Wedding Portrait Session.</li>`
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Cinematic Videography:`;
+        serviceElements.SF2.innerHTML = `<li>-Highlight film (3-5 minutes).</li> <li>-Full Event Coverage with drone footage (where permitted).</li><li>-Raw footage on a custom USB drive.</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Photo & video editing: `;
+        serviceElements.SF3.innerHTML = `<li>-Professional editing of all selected images.</li> <li>-Color correction and sound editing for videos.</li>`;
+
+        serviceElements.PF6.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Online Gallery & Prints.`
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Bonus:`
+        serviceElements.SF4.innerHTML = `<li>-Complimentary bridal portrait session.</li> `;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>  <p class = "package-description">Can be adjusted to your needs.</p>`;
+    
+    }else if (serviceNO == 2 ){
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/product-shoot-review-thumbnail.png)';
+
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon" style = "background-image: url(ImagesFolder/product-shoot-icon.png)"></div> Product Shoot`;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `2,500`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Studio or in location shoot.`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div>Photo style discussed with product owner. `;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>Multiple angles per product (up to 3 angles per item). `;
+        
+        serviceElements.SF1.innerHTML = ``;
+        
+        serviceElements.PF4.innerHTML =  `Use of professional lighting and backdrop options`;
+        serviceElements.SF2.innerHTML = ``
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>Basic retouching of all images.`;
+        serviceElements.SF3.innerHTML = `<li>Professional editing will not effect the product natural image at all to comply with ethical product photography code.</li>`;
+
+        serviceElements.PF6.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>Delivery of high-resolution images suitable for online and print use.`;
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>360-degree rotation videos.`;
+        serviceElements.SF4.innerHTML = ``;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>  <p class = "package-description">Can be adjusted to your needs.</p>`;
+
+
+
+
+
+    } else if (serviceNO == 3){
+
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/studio-shoot-review-thumbnail.png)'
+
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon" style = "background-image: url(ImagesFolder/studio-shoot-icon.png)"></div> Studio Shoot`;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `199`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Pre-Session Consultation:`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div> Studio Rental:`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Photography Session:`;
+        
+        serviceElements.SF1.innerHTML = `<li>Up to 1 hour of shooting with a dedicated photographer.</li>`;
+        
+        serviceElements.PF4.innerHTML =  `Image Editing & Retouching:`;
+        serviceElements.SF2.innerHTML = `<li>Enhanced images with professional editing, color correction, and retouching of your selected photos. (All withing realistic boundaries, over-correction not allowed)</li>`
+        
+        serviceElements.PF5.innerHTML =  `Image Delivery Timeline:`;
+        serviceElements.SF3.innerHTML = `<li>Final images within the same day after the shoot.</li>`;
+
+        serviceElements.PF6.innerHTML =  ``;
+        serviceElements.PF7.innerHTML =  ``;
+        serviceElements.SF4.innerHTML = ``;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>  <p class = "package-description">Can be adjusted to your needs.</p>`;
+        }else if (serviceNO == 4){
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/event-coverage-review-thumbnail.png)'
+
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon" style = "background-image: url(ImagesFolder/event-coverage-icon.png)"></div> Event Coverage`;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `7,000`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Pre-Event Consultation to understand requirments and shot preferences.`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div> Full Event Coverage with a professional photographer.`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> High-resolution edited images delivered via online gallery.`;
+        
+        serviceElements.SF1.innerHTML = ``;
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>Unlimited photos within the coverage hours:`;
+        serviceElements.SF2.innerHTML = `<li>Candid and posed shots capturing all key moments<li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>Basic retouching to enhance photos:`;
+        serviceElements.SF3.innerHTML = `<li>Delivery Timeline: within 7 days after the event</li>`;
+
+        serviceElements.PF6.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>Optional add-ons: Photo album, printed photos, additional hours.`;
+        serviceElements.PF7.innerHTML =  ``;
+        serviceElements.SF4.innerHTML = ``;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>  <p class = "package-description">Can be adjusted to your needs.</p>`;
+        };
+
+
+
+
+
+
+
+
+
+function currentLanguage(){
+
+    let languageStored = JSON.parse(localStorage.getItem('previousLanguage')) || 'English';
+
+    if (languageStored =='Arabic') {
+
+        console.log('English is current, now switching to Arabic');
+
+
+        const portfolioName = document.querySelector('.name');
+        portfolioName.innerHTML = 'خالد';
+
+        const langButton = document.querySelector('.language');
+        langButton.innerHTML = 'EN';
+
+        document.body.style.direction = 'rtl';
+
+        const packagePriceA = document.querySelector('.package-price');
+        packagePriceA.style.flexDirection = 'row-reverse';
+
+        const packageIconA = document.querySelector('.package-icon');
+        if(packageIconA){
+        packageIconA.style.marginRight = '0px';
+        packageIconA.style.marginLeft = 'clamp(0px, 1.39534884vw, 7.07px)';};
+
+        document.querySelectorAll('.bulletpoint').forEach(element => {
+        element.classList.replace('bulletpoint-en', 'bulletpoint-ar');
+        });
+
+        startCountdownArabic();
+
+
+
+
+        if (serviceNO == 1){
+        serviceElements.ST.style.backgroundImage = `url(ImagesFolder/wedding-coverage-review-thumbnail-arabic.png)`;
+
+        serviceElements.SINA.style.paddingLeft = '5%';
+        serviceElements.SINA.style.paddingRight = '0%';
+
+
+        serviceElements.SINA.innerHTML = `   <div class="service-icon-arabic"></div>  تغطية أفراح`;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> <img src="ImagesFolder/Flash-icon.png" class="package-icon" style="margin-right: 0px; margin-left: clamp(0px, 1.39535vw, 7.07px); transform:rotateY(180deg);"> باقة الفلاش  </div>`
+        serviceElements.CrossedPrice.innerText = `١٢٬٠٠٠`;
+        serviceElements.CurrentPrice.innerText =  `٩٥٠٠`;
+
+        serviceElements.PF1.innerHTML = "<div class='bulletpoint bulletpoint-ar'></div> تغطية يوم كامل تصل إالى ١٠ ساعات.";
+        serviceElements.PF2.innerHTML = "<div class='bulletpoint bulletpoint-ar'></div> إستشارة ما قبل الفرح.";
+        serviceElements.PF3.innerHTML = "<div class='bulletpoint bulletpoint-ar'></div>    مصور محترف:";
+        
+        
+        serviceElements.SF1.innerHTML = ` <li>-مصور محترف.</li> <li>-تصوير عفوي و تقليدي للحضور و أصحاب الفرح.</li><li>-تصوير ما قبل الزفاف و العرس.</li>`
+        
+        serviceElements.PF4.innerHTML = `<div class='bulletpoint bulletpoint-ar'></div>     تصوير فيديو سينمائي:  `;
+        serviceElements.SF2.innerHTML = `<li>-مقطع ممنتج قصير (٣-٥ دقائق).</li> <li>-تغطية الحفل كاملاَ بواسطة طائرة الدرون (بالأماكن المسموحة قانونياَ).</li><li>-التصوير الخام على USB مخصص.</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class='bulletpoint bulletpoint-ar'></div>     المنتاج للصورة و الفيديو: `;
+        serviceElements.SF3.innerHTML = `<li>-تعديل إحترافي  و بسيط لجميع الصور المختاره.</li><li>-معالجة لونية و صوتية لمقاطع الفيديو.</li> `;
+
+        serviceElements.PF6.innerHTML =  `<div class='bulletpoint bulletpoint-ar'></div> المطبوعات و المعرض الإلكتروني`;
+        serviceElements.PF7.innerHTML =  `<div class='bulletpoint bulletpoint-ar'></div>  الإضافات:  `;
+        serviceElements.SF4.innerHTML = `<li>-جلسة تصوير بورتريه مجانية للمعرس.</li> `;
+
+        
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> الباقة الرئيسية </div>  <p class = "package-description">يتم التعديل حسب الإحتياج.</p>`;
+
+    
+    }else if (serviceNO == 2 ){
+
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/product-shoot-review-thumbnail.png)';
+
+
+        serviceElements.SINA.style.paddingLeft = '5%';
+        serviceElements.SINA.style.paddingRight = '0%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon-arabic" style = "background-image: url(ImagesFolder/product-shoot-icon.png)"></div> تصوير المنتجات `;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> الباقة الرئيسية </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `٢,٥٠٠`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-ar"></div>   داخل إستديو أو مكان مختار.`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-ar"></div> تخيير مالك المنتج بإسلوب أو ستايل الصورة. `;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div>زوايا متعددة لكل منتج (إلى ٣ زوايا لكل منتج). `;
+        
+        serviceElements.SF1.innerHTML = ``;
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div>إستخدام إحترافي للإضاءة و الخلفيات`;
+        serviceElements.SF2.innerHTML = ``
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div>  معالجة معتدلة للصور.`;
+        serviceElements.SF3.innerHTML = `<li>لن يؤثر التعديل المهني على الصورة الطبيعية للمنتج على الإطلاق للامتثال لمدونة التصوير الأخلاقية للمنتج.</li>`;
+
+        serviceElements.PF6.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div>تسليم صور عالية الدقة مناسبة للاستخدام عبر الإنترنت والطباعة.`;
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> مقاطع دواران  360 درجة للمنتج/ات.`;
+        serviceElements.SF4.innerHTML = ``;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> الباقة الرئيسية </div>  <p class = "package-description">يتم التعديل حسب الإحتياج.</p>`;
+
+
+
+
+
+    } else if (serviceNO == 3){
+
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/studio-shoot-review-thumbnail-arabic.png)'
+
+
+        serviceElements.SINA.style.paddingLeft = '5%';
+        serviceElements.SINA.style.paddingRight = '0%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon-arabic" style = "background-image: url(ImagesFolder/studio-shoot-icon.png)"></div> تصوير إستديو `;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> الباقة الرئيسية </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `١٩٩`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-ar"></div> إستشارة ما قبل التصوير.`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-ar"></div>  تأجير الإستديو.`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div>  جلسة التصوير:`;
+        
+        serviceElements.SF1.innerHTML = `<li>إلى ساعة واحدة من التصوير مع مصور مختص.</li>`;
+        
+        serviceElements.PF4.innerHTML =  `تعديل و معالجة الصور:`;
+        serviceElements.SF2.innerHTML = `<li>صور مع تعديل احترافي، وتصحيح الألوان، ومعالجة الصور المختارة الخاصة بك. (جميعها ضمن حدود واقعية، لا يسمح بالمبالغة في التصحيح)</li>`
+        
+        serviceElements.PF5.innerHTML =  `سرعة تسليم الصور:`;
+        serviceElements.SF3.innerHTML = `<li>الصور النهائية خلال نفس اليوم بعد التصوير.</li>`;
+
+        serviceElements.PF6.innerHTML =  ``;
+        serviceElements.PF7.innerHTML =  ``;
+        serviceElements.SF4.innerHTML = ``;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> الباقة الرئيسية </div>  <p class = "package-description">يتم التعديل حسب الإحتياج.</p>`;
+        }else if (serviceNO == 4){
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/event-coverage-review-thumbnail.png)'
+
+
+        serviceElements.SINA.style.paddingLeft = '5%';
+        serviceElements.SINA.style.paddingRight = '0%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon-arabic" style = "background-image: url(ImagesFolder/event-coverage-icon.png)"></div> تغطية المهرجانات `;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `٧,٠٠٠`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-ar"></div> استشارة قبل الحدث لفهم المتطلبات وتفضيلات التصوير.`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-ar"></div> تغطية كاملة للحدث مع مصور محترف`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> صور عالية الدقة معدلة تُسلم عبر معرض إلكتروني.`;
+        
+        serviceElements.SF1.innerHTML = ``;
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div>صور غير محدودة خلال ساعات التغطية:`;
+        serviceElements.SF2.innerHTML = `<li>لقطات عفوية ومعدة تلتقط جميع اللحظات الرئيسية<li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div>التعديل الأساسي لتحسين الصور:`;
+        serviceElements.SF3.innerHTML = `<li>سرعة التسليم: خلال 7 أيام بعد الحدث</li>`;
+
+        serviceElements.PF6.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div>الإضافات الاختيارية: ألبوم صور، صور مطبوعة، ساعات إضافية.`;
+        serviceElements.PF7.innerHTML =  ``;
+        serviceElements.SF4.innerHTML = ``;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> الباقة الرئيسية </div>  <p class = "package-description">يتم التعديل حسب الإحتياج.</p>`;
+        };
+
+
+        serviceElements.PCN.innerText = ' *الدفع و تأكيد الحجز بعد مكالمتنا معكم.';
+
+        serviceElements.RCTA.innerText = 'الإستمرار للحجز';
+
+             language = 'Arabic';
+        console.log('Switched Language to Arabic');
+
+        localStorage.setItem('previousLanguage', JSON.stringify(language));
+   
+
+    }else if (languageStored == 'English'){
+
+        const langButton = document.querySelector('.language');
+        langButton.innerHTML = 'ع';
+
+        document.body.style.direction = 'ltr';
+
+
+        const portfolioName = document.querySelector('.name');
+        portfolioName.innerText = 'Khalid';
+
+        const packagePriceA = document.querySelector('.package-price');
+        packagePriceA.style.flexDirection = 'row';
+
+        const packageIconA = document.querySelector('.package-icon');
+        if (packageIconA){
+        packageIconA.style.marginRight = 'clamp(0px, 1.39534884vw, 7.07px)';
+        packageIconA.style.marginLeft = '0px';}
+
+        document.querySelectorAll('.bulletpoint').forEach(element => {
+        element.classList.replace('bulletpoint-ar', 'bulletpoint-en');
+        });
+
+        startCountdownArabic();
+
+        const serviceNO = localStorage.getItem('serviceNo');
+        console.log(serviceNO);
+
+        if (serviceNO == 1){
+        serviceElements.ST.style.backgroundImage = `url(ImagesFolder/wedding-coverage-review-thumbnail.png)`;
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SI.style.backgroundImage = `url(ImagesFolder/wedding-coverage-icon.png) ;`;
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon"></div> Wedding Coverage`
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> <img src="ImagesFolder/Flash-icon.png" class="package-icon" style="margin-left: 0px; margin-right: clamp(0px, 1.39535vw, 7.07px); "> Flash Package </div>`
+        serviceElements.CrossedPrice.innerText = `12,000`;
+        serviceElements.CurrentPrice.innerText =  `9,500`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Full Day Coverage Up to 10 hours.`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div> Pre-Wedding Consultation.`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Professional Photography:`
+        
+        serviceElements.SF1.innerHTML = ` <li>-Experienced Photographer.</li> <li>-Candid and traditional shots.</li><li>-Pre-Wedding Portrait Session.</li>`
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Cinematic Videography:`;
+        serviceElements.SF2.innerHTML = `<li>-Highlight film (3-5 minutes).</li> <li>-Full Event Coverage with drone footage (where permitted).</li><li>-Raw footage on a custom USB drive.</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Photo & video editing: `;
+        serviceElements.SF3.innerHTML = `<li>-Professional editing of all selected images.</li> <li>-Color correction and sound editing for videos.</li>`;
+
+        serviceElements.PF6.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Online Gallery & Prints.`
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Bonus:`
+        serviceElements.SF4.innerHTML = `<li>-Complimentary bridal portrait session.</li> `;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>  <p class = "package-description">Can be adjusted to your needs.</p>`;
+
+    
+    }else if (serviceNO == 2 ){
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/product-shoot-review-thumbnail.png)';
+
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon" style = "background-image: url(ImagesFolder/product-shoot-icon.png)"></div> Product Shoot`;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `2,500`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Studio or in location shoot.`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div>Photo style discussed with product owner. `;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>Multiple angles per product (up to 3 angles per item). `;
+        
+        serviceElements.SF1.innerHTML = ``;
+        
+        serviceElements.PF4.innerHTML =  `Use of professional lighting and backdrop options`;
+        serviceElements.SF2.innerHTML = ``
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>Basic retouching of all images.`;
+        serviceElements.SF3.innerHTML = `<li>Professional editing will not effect the product natural image at all to comply with ethical product photography code.</li>`;
+
+        serviceElements.PF6.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>Delivery of high-resolution images suitable for online and print use.`;
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>360-degree rotation videos.`;
+        serviceElements.SF4.innerHTML = ``;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>  <p class = "package-description">Can be adjusted to your needs.</p>`;
+
+
+
+
+
+    } else if (serviceNO == 3){
+
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/studio-shoot-review-thumbnail.png)'
+
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon" style = "background-image: url(ImagesFolder/studio-shoot-icon.png)"></div> Studio Shoot`;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `199`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Pre-Session Consultation:`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div> Studio Rental:`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Photography Session:`;
+        
+        serviceElements.SF1.innerHTML = `<li>Up to 1 hour of shooting with a dedicated photographer.</li>`;
+        
+        serviceElements.PF4.innerHTML =  `Image Editing & Retouching:`;
+        serviceElements.SF2.innerHTML = `<li>Enhanced images with professional editing, color correction, and retouching of your selected photos. (All withing realistic boundaries, over-correction not allowed)</li>`
+        
+        serviceElements.PF5.innerHTML =  `Image Delivery Timeline:`;
+        serviceElements.SF3.innerHTML = `<li>Final images within the same day after the shoot.</li>`;
+
+        serviceElements.PF6.innerHTML =  ``;
+        serviceElements.PF7.innerHTML =  ``;
+        serviceElements.SF4.innerHTML = ``;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>  <p class = "package-description">Can be adjusted to your needs.</p>`;
+        }else if (serviceNO == 4){
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/event-coverage-review-thumbnail.png)'
+
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon" style = "background-image: url(ImagesFolder/event-coverage-icon.png)"></div> Event Coverage`;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `7,000`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Pre-Event Consultation to understand requirments and shot preferences.`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div> Full Event Coverage with a professional photographer.`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> High-resolution edited images delivered via online gallery.`;
+        
+        serviceElements.SF1.innerHTML = ``;
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>Unlimited photos within the coverage hours:`;
+        serviceElements.SF2.innerHTML = `<li>Candid and posed shots capturing all key moments<li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>Basic retouching to enhance photos:`;
+        serviceElements.SF3.innerHTML = `<li>Delivery Timeline: within 7 days after the event</li>`;
+
+        serviceElements.PF6.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>Optional add-ons: Photo album, printed photos, additional hours.`;
+        serviceElements.PF7.innerHTML =  ``;
+        serviceElements.SF4.innerHTML = ``;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>  <p class = "package-description">Can be adjusted to your needs.</p>`;
+        };
+
+
+        serviceElements.PCN.innerText = ' *Payment & Confirmation after our call.';
+
+        serviceElements.RCTA.innerText = 'Continue To Booking';
+
+
+        language = 'English';
+        console.log('Switched Language to English');
+
+        localStorage.setItem('previousLanguage', JSON.stringify(language));
+
+
+
+        console.log('English is the current language');
+
+    }};
+
+
+currentLanguage();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function switchLanguage(){
+
+    const langButton = document.querySelector('.language');
+
+    console.log(langButton.innerHTML)
+
+    if (langButton.innerHTML == 'ع') {
+
+        console.log('English is current, now switching to Arabic');
+        const langButton = document.querySelector('.language');
+        langButton.innerHTML = 'EN';
+
+        document.body.style.direction = 'rtl';
+
+        const nameA = document.querySelector('.name');
+        nameA.innerText = 'خالد';
+
+        const packagePriceA = document.querySelector('.package-price');
+        packagePriceA.style.flexDirection = 'row-reverse';
+
+        const packageIconA = document.querySelector('.package-icon');
+        if(packageIconA){
+        packageIconA.style.marginRight = '0px';
+        packageIconA.style.marginLeft = 'clamp(0px, 1.39534884vw, 7.07px)';};
+
+        document.querySelectorAll('.bulletpoint').forEach(element => {
+        element.classList.replace('bulletpoint-en', 'bulletpoint-ar');
+        });
+
+        startCountdownArabic();
+
+
+
+
+        if (serviceNO == 1){
+        serviceElements.ST.style.backgroundImage = `url(ImagesFolder/wedding-coverage-review-thumbnail-arabic.png)`;
+
+        serviceElements.SINA.style.paddingLeft = '5%';
+        serviceElements.SINA.style.paddingRight = '0%';
+
+
+        serviceElements.SINA.innerHTML = `   <div class="service-icon-arabic"></div>  تغطية أفراح`;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> <img src="ImagesFolder/Flash-icon.png" class="package-icon" style="margin-right: 0px; margin-left: clamp(0px, 1.39535vw, 7.07px); transform:rotateY(180deg);"> باقة الفلاش  </div>`
+        serviceElements.CrossedPrice.innerText = `١٢٬٠٠٠`;
+        serviceElements.CurrentPrice.innerText =  `٩٥٠٠`;
+
+        serviceElements.PF1.innerHTML = "<div class='bulletpoint bulletpoint-ar'></div> تغطية يوم كامل تصل إالى ١٠ ساعات.";
+        serviceElements.PF2.innerHTML = "<div class='bulletpoint bulletpoint-ar'></div> إستشارة ما قبل الفرح.";
+        serviceElements.PF3.innerHTML = "<div class='bulletpoint bulletpoint-ar'></div>    مصور محترف:";
+        
+        
+        serviceElements.SF1.innerHTML = ` <li>-مصور محترف.</li> <li>-تصوير عفوي و تقليدي للحضور و أصحاب الفرح.</li><li>-تصوير ما قبل الزفاف و العرس.</li>`
+        
+        serviceElements.PF4.innerHTML = `<div class='bulletpoint bulletpoint-ar'></div>     تصوير فيديو سينمائي:  `;
+        serviceElements.SF2.innerHTML = `<li>-مقطع ممنتج قصير (٣-٥ دقائق).</li> <li>-تغطية الحفل كاملاَ بواسطة طائرة الدرون (بالأماكن المسموحة قانونياَ).</li><li>-التصوير الخام على USB مخصص.</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class='bulletpoint bulletpoint-ar'></div>     المنتاج للصورة و الفيديو: `;
+        serviceElements.SF3.innerHTML = `<li>-تعديل إحترافي  و بسيط لجميع الصور المختاره.</li><li>-معالجة لونية و صوتية لمقاطع الفيديو.</li> `;
+
+        serviceElements.PF6.innerHTML =  `<div class='bulletpoint bulletpoint-ar'></div> المطبوعات و المعرض الإلكتروني`;
+        serviceElements.PF7.innerHTML =  `<div class='bulletpoint bulletpoint-ar'></div>  الإضافات:  `;
+        serviceElements.SF4.innerHTML = `<li>-جلسة تصوير بورتريه مجانية للمعرس.</li> `;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> الباقة الرئيسية </div>  <p class = "package-description">يتم التعديل حسب الإحتياج.</p>`;
+    
+    }else if (serviceNO == 2 ){
+
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/product-shoot-review-thumbnail.png)';
+
+
+        serviceElements.SINA.style.paddingLeft = '5%';
+        serviceElements.SINA.style.paddingRight = '0%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon-arabic" style = "background-image: url(ImagesFolder/product-shoot-icon.png)"></div> تصوير المنتجات `;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> الباقة الرئيسية </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `٢,٥٠٠`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-ar"></div>   داخل إستديو أو مكان مختار.`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-ar"></div> تخيير مالك المنتج بإسلوب أو ستايل الصورة `;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div>زوايا متعددة لكل منتج (إلى ٣ زوايا لكل منتج). `;
+        
+        serviceElements.SF1.innerHTML = ``;
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div>إستخدام إحترافي للإضاءة و الخلفيات`;
+        serviceElements.SF2.innerHTML = ``
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div>  معالجة معتدلة للصور.`;
+        serviceElements.SF3.innerHTML = `<li>لن يؤثر التعديل المهني على الصورة الطبيعية للمنتج على الإطلاق للامتثال لمدونة التصوير الأخلاقية للمنتج.</li>`;
+
+        serviceElements.PF6.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div>تسليم صور عالية الدقة مناسبة للاستخدام عبر الإنترنت والطباعة.`;
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> مقاطع دواران  360 درجة للمنتج/ات.`;
+        serviceElements.SF4.innerHTML = ``;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> الباقة الرئيسية </div>  <p class = "package-description">يتم التعديل حسب الإحتياج.</p>`;
+
+
+
+
+
+    } else if (serviceNO == 3){
+
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/studio-shoot-review-thumbnail-arabic.png)'
+
+
+        serviceElements.SINA.style.paddingLeft = '5%';
+        serviceElements.SINA.style.paddingRight = '0%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon-arabic" style = "background-image: url(ImagesFolder/studio-shoot-icon.png)"></div> تصوير إستديو `;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> الباقة الرئيسية </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `١٩٩`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-ar"></div> إستشارة ما قبل التصوير.`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-ar"></div>  تأجير الإستديو.`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div>  جلسة التصوير:`;
+        
+        serviceElements.SF1.innerHTML = `<li>إلى ساعة واحدة من التصوير مع مصور مختص.</li>`;
+        
+        serviceElements.PF4.innerHTML =  `تعديل و معالجة الصور:`;
+        serviceElements.SF2.innerHTML = `<li>صور مع تعديل احترافي، وتصحيح الألوان، ومعالجة الصور المختارة الخاصة بك. (جميعها ضمن حدود واقعية، لا يسمح بالمبالغة في التصحيح)</li>`
+        
+        serviceElements.PF5.innerHTML =  `سرعة تسليم الصور:`;
+        serviceElements.SF3.innerHTML = `<li>الصور النهائية خلال نفس اليوم بعد التصوير.</li>`;
+
+        serviceElements.PF6.innerHTML =  ``;
+        serviceElements.PF7.innerHTML =  ``;
+        serviceElements.SF4.innerHTML = ``;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> الباقة الرئيسية </div>  <p class = "package-description"></p>`;
+        }else if (serviceNO == 4){
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/event-coverage-review-thumbnail.png)'
+
+
+        serviceElements.SINA.style.paddingLeft = '5%';
+        serviceElements.SINA.style.paddingRight = '0%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon-arabic" style = "background-image: url(ImagesFolder/event-coverage-icon.png)"></div> تغطية المهرجانات `;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> الباقة الرئيسية </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `٧,٠٠٠`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-ar"></div> استشارة قبل الحدث لفهم المتطلبات وتفضيلات التصوير.`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-ar"></div> تغطية كاملة للحدث مع مصور محترف`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div> صور عالية الدقة معدلة تُسلم عبر معرض إلكتروني.`;
+        
+        serviceElements.SF1.innerHTML = ``;
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div>صور غير محدودة خلال ساعات التغطية:`;
+        serviceElements.SF2.innerHTML = `<li>لقطات عفوية ومعدة تلتقط جميع اللحظات الرئيسية<li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div>التعديل الأساسي لتحسين الصور:`;
+        serviceElements.SF3.innerHTML = `<li>سرعة التسليم: خلال 7 أيام بعد الحدث</li>`;
+
+        serviceElements.PF6.innerHTML =  `<div class="bulletpoint bulletpoint-ar"></div>الإضافات الاختيارية: ألبوم صور، صور مطبوعة، ساعات إضافية.`;
+        serviceElements.PF7.innerHTML =  ``;
+        serviceElements.SF4.innerHTML = ``;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> الباقة الرئيسية </div>  <p class = "package-description">يتم التعديل حسب الإحتياج.</p>`;
+        };
+
+
+        serviceElements.PCN.innerText = ' *الدفع و تأكيد الحجز بعد مكالمتنا معكم.';
+
+        serviceElements.RCTA.innerText = 'الإستمرار للحجز';
+
+
+        language = 'Arabic';
+        console.log('Switched Language to Arabic');
+
+        localStorage.setItem('previousLanguage', JSON.stringify(language));
+
+    
+    }else if (langButton.innerHTML == 'EN'){
+        const langButton = document.querySelector('.language');
+        langButton.innerHTML = 'ع';
+
+        document.body.style.direction = 'ltr';
+
+
+        const nameA = document.querySelector('.name');
+        nameA.innerText = 'Khalid';
+
+        const packagePriceA = document.querySelector('.package-price');
+        packagePriceA.style.flexDirection = 'row';
+
+        const packageIconA = document.querySelector('.package-icon');
+        if (packageIconA){
+        packageIconA.style.marginRight = 'clamp(0px, 1.39534884vw, 7.07px)';
+        packageIconA.style.marginLeft = '0px';}
+
+        document.querySelectorAll('.bulletpoint').forEach(element => {
+        element.classList.replace('bulletpoint-ar', 'bulletpoint-en');
+        });
+
+        startCountdownArabic();
+
+        const serviceNO = localStorage.getItem('serviceNo');
+        console.log(serviceNO);
+
+        if (serviceNO == 1){
+        serviceElements.ST.style.backgroundImage = `url(ImagesFolder/wedding-coverage-review-thumbnail.png)`;
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SI.style.backgroundImage = `url(ImagesFolder/wedding-coverage-icon.png) ;`;
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon"></div> Wedding Coverage`
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> <img src="ImagesFolder/Flash-icon.png" class="package-icon" style="margin-left: 0px; margin-right: clamp(0px, 1.39535vw, 7.07px); "> Flash Package </div>`
+        serviceElements.CrossedPrice.innerText = `12,000`;
+        serviceElements.CurrentPrice.innerText =  `9,500`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Full Day Coverage Up to 10 hours.`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div> Pre-Wedding Consultation.`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Professional Photography:`
+        
+        serviceElements.SF1.innerHTML = ` <li>-Experienced Photographer.</li> <li>-Candid and traditional shots.</li><li>-Pre-Wedding Portrait Session.</li>`
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Cinematic Videography:`;
+        serviceElements.SF2.innerHTML = `<li>-Highlight film (3-5 minutes).</li> <li>-Full Event Coverage with drone footage (where permitted).</li><li>-Raw footage on a custom USB drive.</li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Photo & video editing: `;
+        serviceElements.SF3.innerHTML = `<li>-Professional editing of all selected images.</li> <li>-Color correction and sound editing for videos.</li>`;
+
+        serviceElements.PF6.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Online Gallery & Prints.`
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Bonus:`
+        serviceElements.SF4.innerHTML = `<li>-Complimentary bridal portrait session.</li> `
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>  <p class = "package-description">Can be adjusted to your needs.</p>`;
+    
+    }else if (serviceNO == 2 ){
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/product-shoot-review-thumbnail.png)';
+
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon" style = "background-image: url(ImagesFolder/product-shoot-icon.png)"></div> Product Shoot`;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `2,500`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Studio or in location shoot.`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div>Photo style discussed with product owner. `;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>Multiple angles per product (up to 3 angles per item). `;
+        
+        serviceElements.SF1.innerHTML = ``;
+        
+        serviceElements.PF4.innerHTML =  `Use of professional lighting and backdrop options`;
+        serviceElements.SF2.innerHTML = ``
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>Basic retouching of all images.`;
+        serviceElements.SF3.innerHTML = `<li>Professional editing will not effect the product natural image at all to comply with ethical product photography code.</li>`;
+
+        serviceElements.PF6.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>Delivery of high-resolution images suitable for online and print use.`;
+        serviceElements.PF7.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>360-degree rotation videos.`;
+        serviceElements.SF4.innerHTML = ``;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>  <p class = "package-description">Can be adjusted to your needs.</p>`;
+
+
+
+
+
+    } else if (serviceNO == 3){
+
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/studio-shoot-review-thumbnail.png)'
+
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon" style = "background-image: url(ImagesFolder/studio-shoot-icon.png)"></div> Studio Shoot`;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `199`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Pre-Session Consultation:`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div> Studio Rental:`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> Photography Session:`;
+        
+        serviceElements.SF1.innerHTML = `<li>Up to 1 hour of shooting with a dedicated photographer.</li>`;
+        
+        serviceElements.PF4.innerHTML =  `Image Editing & Retouching:`;
+        serviceElements.SF2.innerHTML = `<li>Enhanced images with professional editing, color correction, and retouching of your selected photos. (All withing realistic boundaries, over-correction not allowed)</li>`
+        
+        serviceElements.PF5.innerHTML =  `Image Delivery Timeline:`;
+        serviceElements.SF3.innerHTML = `<li>Final images within the same day after the shoot.</li>`;
+
+        serviceElements.PF6.innerHTML =  ``;
+        serviceElements.PF7.innerHTML =  ``;
+        serviceElements.SF4.innerHTML = ``;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>  <p class = "package-description">Can be adjusted to your needs.</p>`;
+        }else if (serviceNO == 4){
+        serviceElements.ST.style.backgroundImage = 'url(ImagesFolder/event-coverage-review-thumbnail.png)'
+
+
+        serviceElements.SINA.style.paddingLeft = '0%';
+        serviceElements.SINA.style.paddingRight = '5%';
+
+        serviceElements.SINA.innerHTML = `<div class="service-icon" style = "background-image: url(ImagesFolder/event-coverage-icon.png)"></div> Event Coverage`;
+        serviceElements.PNI.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>`;
+        serviceElements.CrossedPrice.innerText = ``;
+        serviceElements.CurrentPrice.innerText =  `7,000`;
+
+        serviceElements.PF1.innerHTML = `<div class="bulletpoint bulletpoint-en"></div> Pre-Event Consultation to understand requirments and shot preferences.`;
+        serviceElements.PF2.innerHTML = ` <div class="bulletpoint bulletpoint-en"></div> Full Event Coverage with a professional photographer.`;
+        serviceElements.PF3.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div> High-resolution edited images delivered via online gallery.`;
+        
+        serviceElements.SF1.innerHTML = ``;
+        
+        serviceElements.PF4.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>Unlimited photos within the coverage hours:`;
+        serviceElements.SF2.innerHTML = `<li>Candid and posed shots capturing all key moments<li>`
+        
+        serviceElements.PF5.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>Basic retouching to enhance photos:`;
+        serviceElements.SF3.innerHTML = `<li>Delivery Timeline: within 7 days after the event</li>`;
+
+        serviceElements.PF6.innerHTML =  `<div class="bulletpoint bulletpoint-en"></div>Optional add-ons: Photo album, printed photos, additional hours.`;
+        serviceElements.PF7.innerHTML =  ``;
+        serviceElements.SF4.innerHTML = ``;
+
+        serviceElements.PNC.innerHTML = `<div class="package-name-and-icon"> Starter Package </div>  <p class = "package-description">Can be adjusted to your needs.</p>`;
+        };
+
+
+        serviceElements.PCN.innerText = ' *Payment & Confirmation after our call.';
+
+        serviceElements.RCTA.innerText = 'Continue To Booking';
+
+
+        language = 'English';
+        console.log('Switched Language to English');
+
+        localStorage.setItem('previousLanguage', JSON.stringify(language));
+
+}};          
+
+
+
+
+
+
+
+
+          
+
+</script>
